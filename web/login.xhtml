@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>BuildBudget</title>
+        
+        <h:outputStylesheet name="./css/bootstrap.css"/>
+    </h:head>
+    <h:body>
+        
+        
+        <div class="container">
+            <div class="row-fluid">
+                <div class='span6 offset4'>
+            
+                    <h:form id="loginForm">
+
+
+                       <p:growl id="msg" showDetail="true" life="3000" />
+                       <p:panel header="Login" style="width: 300px;">
+
+                           <h:panelGrid id="loginPanel" columns="2">
+
+                               <h:outputText value="Username" />
+
+                               <p:inputText id="username" value="" ></p:inputText>
+
+                               <p:spacer></p:spacer>
+
+                               <p:message for="username" ></p:message>
+
+                               <h:outputText value="Password" />
+
+                               <p:password id="password" value=""  feedback="false"></p:password>
+
+                               <p:spacer></p:spacer>
+
+                               <p:message for="password"></p:message>
+
+                               <p:spacer></p:spacer>
+
+                               <p:commandButton action="#" value="Login" update="loginForm" ajax="true"></p:commandButton>
+
+                           </h:panelGrid>
+
+                       </p:panel>
+
+                   </h:form>
+                </div>
+            </div>
+        </div>
+        
+    </h:body>
+</html>
+

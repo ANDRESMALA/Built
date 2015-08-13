@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:p="http://primefaces.org/ui">
+    
+   <h:form>  
+      <p:growl id="messages"/>  
+
+      <p:menubar>
+    
+            <p:submenu label="Home">  
+                
+            </p:submenu> 
+          
+            <p:submenu label="Presupuesto">  
+                 <p:menuitem value="Nuevo presupuesto" url="/principal/publica/nuevopresupuesto.faces" />
+                 <p:menuitem value="Presupuesto por Cliente" url="#"/>
+            </p:submenu>  
+          
+            <p:submenu label="Clientes">  
+                 <p:menuitem value="Nuevo Cliente" url="#" />
+                 <p:menuitem value="Listar Clientes" url="#" />
+            </p:submenu> 
+          
+            <p:submenu label="Partidas">  
+                 <p:menuitem value="Nueva Sub-Partida" url="#" />
+                 <p:menuitem value="Libreria" url="#" />
+            </p:submenu>
+            
+            <p:submenu label="Mantencion">  
+                 <p:menuitem value="Materiales" url="#" />
+                 <p:menuitem value="Mano de Obra" url="#"/>
+                 <p:menuitem value="Maquinaria" url="#"/>
+            </p:submenu>
+          
+            <p:submenu label="Administracion">  
+                 <p:menuitem value="Valores" url="#" />
+                 <p:menuitem value="Usuarios" url="#"/>
+                 <p:menuitem value="Empresa" url="#"/>
+            </p:submenu>
+          
+          
+          
+      </p:menubar>
+      
+      
+      
+</h:form>  
+  
+</ui:composition> 
