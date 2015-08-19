@@ -13,6 +13,9 @@
     <h:body>
         
         
+        
+        
+        
         <div class="container">
             <div class="row-fluid">
                 <div class='span6 offset4'>
@@ -27,23 +30,13 @@
 
                                <h:outputText value="Username" />
 
-                               <p:inputText id="username" value="" ></p:inputText>
-
-                               <p:spacer></p:spacer>
-
-                               <p:message for="username" ></p:message>
-
+                               <p:inputText id="username" value="#{autentificacionBeans.usuario}" ></p:inputText>
+                             
                                <h:outputText value="Password" />
 
-                               <p:password id="password" value=""  feedback="false"></p:password>
+                               <p:password id="password" value="#{autentificacionBeans.password}"  feedback="false"></p:password>
 
-                               <p:spacer></p:spacer>
-
-                               <p:message for="password"></p:message>
-
-                               <p:spacer></p:spacer>
-
-                               <p:commandButton action="#" value="Login" update="loginForm" ajax="true"></p:commandButton>
+                               <p:commandButton actionListener="#{autentificacionBeans.autentificar(e)}"  value="Login" update="msg" ></p:commandButton>
 
                            </h:panelGrid>
 
